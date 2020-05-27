@@ -2,12 +2,13 @@
 Convert FigShare JSON to RDA Common Standard maDMP JSON
 
 ## Requirements
-Ruby >= 2.6.3
-A Figshare user account and an application defined for API access
+- Ruby >= 2.6.3
+- A Figshare user account and an application defined for API access
 
 ## Installation
 - Clone the repository
 - Run `bundle install`
+- Make a copy of the config file and add your credentials to it
 
 ## Running the prototype
 - Run `ruby figshare_to_madmp.rb`
