@@ -1,0 +1,17 @@
+<h1>Figshare search results</h1>
+
+<%= 'No results found :/' if @results.empty? %>
+
+<ul>
+  <% @results.each do |result| %>
+    <li>
+      <%= "#{result['defined_type_name']} -- #{result['citation']}" %><br>
+      &nbsp;&nbsp;<a href="<%= result['url_public_api'] %>" %>Figshare JSON</a>&nbsp;&nbsp;
+      <a href="/convert?url=<%= URI.escape(result['url_public_api']) %>" %>RDA Common Standard JSON</a>
+    </li>
+  <% end %>
+</ul>
+
+<hr>
+
+<a href="/">Try another search term</a>

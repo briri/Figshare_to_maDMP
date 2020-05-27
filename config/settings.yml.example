@@ -1,0 +1,8 @@
+figshare:
+  username: "[your email]"
+  password: "[your Figshare password]"
+  client_id: "[your Figshare app client_id]"
+  client_secret: "[your Figshare app client_secret]"
+  base_api_url: "https://api.figshare.com/v2"
+  token_path: "/token"
+  search_path: "/articles/search"
